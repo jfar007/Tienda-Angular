@@ -1,6 +1,6 @@
 // This file includes polyfills needed by Angular and is loaded before the app.
 // You can add your own extra polyfills to this file.
-import 'core-js/ses/symbol';
+import 'core-js/es/symbol';
 import 'core-js/es/object';
 import 'core-js/es/function';
 import 'core-js/es/parse-int';
