@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; //Inyectar los componentes de formularios
 import { HttpModule } from '@angular/http';
 import { AngularFireModule } from 'angularfire2'; //Inyectar los componentes de angularfire2
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
 //======================Importar Servicios====================================
 import { AuthService} from "./services/auth.service";
 import { TiendaService } from './services/tienda.service';
@@ -40,6 +42,7 @@ export const firebaseConfig = {
     FormsModule,
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),
+	AngularFireDatabaseModule,
     ReactiveFormsModule, //Inyectar el módulo ReactiveForms
     TiendaRoutingModule //Agregar el modulo TareasRouting para el manejo de las URL
   ],
